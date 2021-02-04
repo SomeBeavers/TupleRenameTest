@@ -44,6 +44,17 @@ namespace TupleRenameTest
             Console.WriteLine($"Sum of {t2331.sum31} elements is {t2331.ToString()}.");
             Console.WriteLine($"Sum of {t2331.Item1} elements is {t2331.Item2}.");
 
+
+            (int A, int B) valueTuple = GetPoint();
+
+
+            var t21 = (name1: "value1", name2: "value2");
+            var tName1 = t21.name1;
+        }
+
+        (int A, int B) GetPoint()
+        {
+            return (A: 1, 2);
         }
     }
 }

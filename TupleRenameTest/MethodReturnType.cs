@@ -13,6 +13,11 @@ namespace TupleRenameTest
             return (name: name, title, year);
         }
 
+        (int A, int B) GetPoint()
+        {
+            return (A: 1, 2);
+        }
+
         private void Test1()
         {
             (string name, string, long) tupleReturnLiteral = TupleReturnLiteral(1);
