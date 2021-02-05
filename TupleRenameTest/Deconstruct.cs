@@ -4,15 +4,18 @@ namespace TupleRenameTest
 {
     public class Deconstruct
     {
-        private void Test1()
+        private void Test1(string s)
         {
             (string destination, double distance) t = (destination: "post office", distance: 3.6);
+            var tDestination = t.destination;
+
             (string destination, double distance) = t;
 
             Console.WriteLine($"Distance to {destination} is {distance} kilometers.");
         }
         private void Test2()
         {
+            Test1(s: "");
             (string destination, double distance) t = (destination: "post office", distance: 3.6);
             (var destination, var distance) = t;
 
