@@ -11,4 +11,8 @@
     <Compile Include="..\TupleRenameTest\LinkMe1.cs" Link="LinkMe1.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReferenceMe\ReferenceMe.csproj" />
+  </ItemGroup>
+
 </Project>

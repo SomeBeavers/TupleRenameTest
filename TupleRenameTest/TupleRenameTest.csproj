@@ -7,4 +7,14 @@
 
   <Import Project="..\SharedProject1\SharedProject1.projitems" Label="Shared" />
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReferenceMe\ReferenceMe.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ReferenceDLL">
+      <HintPath>..\ReferenceDLL\bin\Debug\netcoreapp3.1\ReferenceDLL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
