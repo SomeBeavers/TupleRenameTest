@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,5 +6,9 @@
   </PropertyGroup>
 
   <Import Project="..\SharedProject1\SharedProject1.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Compile Include="..\TupleRenameTest\LinkMe1.cs" Link="LinkMe1.cs" />
+  </ItemGroup>
 
 </Project>
