@@ -4,7 +4,7 @@ namespace MultiTarget
 {
     class MultiTestClass1
     {
-        private (MyClass /*caret*/MyClass, MyClass2 MyClass2) Test1()
+        private (MyClass MyClass, MyClass2 MyClass2) Test1()
         {
             return (MyClass: null, MyClass2: null);
         }
