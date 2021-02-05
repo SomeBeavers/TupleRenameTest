@@ -1,4 +1,5 @@
 ﻿using System;
+using SharedProject1;
 
 namespace TupleRenameTest
 {
@@ -8,6 +9,22 @@ namespace TupleRenameTest
         {
             var myName = 1;
             return (myName: myName, 2, 3);
+        }
+
+        public (int myName, int, int) MethodReturnType2()
+        {
+            var sharedProp = new Shared1().SharedProp1;
+            Console.WriteLine(sharedProp.s + sharedProp.t);
+            var myName = 1;
+            var localVar = (testMe: myName, 2, 3);
+
+            return (testMe: myName, 2, 3);
+        }
+
+        ((int A, int C), int B) InnerTuple()
+        {
+            var i = 1;
+            return ((i, 1), 2);
         }
 
 

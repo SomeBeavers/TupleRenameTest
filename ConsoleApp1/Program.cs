@@ -12,6 +12,7 @@ namespace ConsoleApp1
         {
             ValueTuple<int, int> tuple = ValueTuple.Create(1,2);
             Console.WriteLine(tuple.Item1 + tuple.Item2);
+
         }
     }
 }

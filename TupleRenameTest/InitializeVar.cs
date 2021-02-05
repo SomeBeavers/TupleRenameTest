@@ -40,7 +40,7 @@ namespace TupleRenameTest
             // TODO: rename variable sum31 here -> tuple initialization is inserted
             var sum31 = 4.5;
             var ToString = 3;
-            var t2331 = (sum31, ToString);
+            var t2331 = (sum31: sum31, Item2: ToString);
             Console.WriteLine($"Sum of {t2331.sum31} elements is {t2331.ToString()}.");
             Console.WriteLine($"Sum of {t2331.Item1} elements is {t2331.Item2}.");
 
@@ -50,6 +50,13 @@ namespace TupleRenameTest
 
             var t21 = (name1: "value1", name2: "value2");
             var tName1 = t21.name1;
+        }
+
+        private void Test2()
+        {
+            var sum31 = 4.5;
+            var ToString = 3;
+            var t2331 = (sum31, ToString);
         }
 
         (int A, int B) GetPoint()
