@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiTarget", "MultiTarget\
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject1", "SharedProject1\SharedProject1.shproj", "{EC43EA29-2B48-42DA-A03B-FDBF3667F761}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceMe", "ReferenceMe\ReferenceMe.csproj", "{CB3D8F3C-8112-4F81-8BA0-00A66FE06068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceMe", "ReferenceMe\ReferenceMe.csproj", "{CB3D8F3C-8112-4F81-8BA0-00A66FE06068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceDLL", "ReferenceDLL\ReferenceDLL.csproj", "{37C3F918-4F07-436D-9487-BAF432A0B422}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceDLL", "ReferenceDLL\ReferenceDLL.csproj", "{E91261A0-23B7-4B77-BC79-E99C42810DCF}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -42,10 +42,10 @@ Global
 		{CB3D8F3C-8112-4F81-8BA0-00A66FE06068}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB3D8F3C-8112-4F81-8BA0-00A66FE06068}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB3D8F3C-8112-4F81-8BA0-00A66FE06068}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37C3F918-4F07-436D-9487-BAF432A0B422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37C3F918-4F07-436D-9487-BAF432A0B422}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37C3F918-4F07-436D-9487-BAF432A0B422}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37C3F918-4F07-436D-9487-BAF432A0B422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91261A0-23B7-4B77-BC79-E99C42810DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91261A0-23B7-4B77-BC79-E99C42810DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91261A0-23B7-4B77-BC79-E99C42810DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91261A0-23B7-4B77-BC79-E99C42810DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

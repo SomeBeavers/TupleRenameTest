@@ -1,11 +1,14 @@
-﻿namespace TupleRenameTest
+﻿using System;
+
+namespace TupleRenameTest
 {
     public class UseExtensionMethod
     {
         private (MyClass MyClass, MyClass23 MyClass23) Test2()
         {
-            var t = (name1: "value1", name2: "value2");
-            var tName1 = t.name1;
+            // t
+            var t1 = (name12: "value1", name2: "value2");
+            var tName1 = t1.name12;
 
             return (null, null);
         }
@@ -13,7 +16,8 @@
         private void Test23()
         {
             var valueTuple = Test2();
-            (string S, string S2) ext = valueTuple.MyExt();
+            var ext = valueTuple.MyExt().S21;
+            var ext2 = MyClassExt.MyExt(s: valueTuple).S21;
         }
 
         public class MyClass
@@ -33,8 +37,9 @@
 
     public static class MyClassExt
     {
-        public static (string S, string S2) MyExt(this (UseExtensionMethod.MyClass MyClass, UseExtensionMethod.MyClass23 myClass2) s)
+        public static (string S, string S21) MyExt(this (UseExtensionMethod.MyClass MyClass, UseExtensionMethod.MyClass23 myClass2) s)
         {
+            Console.WriteLine(s.MyClass);
             return (null, null);
         }
     }

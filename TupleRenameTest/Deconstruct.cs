@@ -4,6 +4,9 @@ namespace TupleRenameTest
 {
     public class Deconstruct
     {
+        
+
+
         private void Test1(string s)
         {
             (string destination, double distance) t = (destination: "post office", distance: 3.6);
@@ -34,8 +37,15 @@ namespace TupleRenameTest
             var distance = 0.0;
 
             (string destination, double distance) t = (destination: "post office", distance: 3.6);
+
             (destination, distance) = t;
             Console.WriteLine($"Distance to {destination} is {distance} kilometers.");
+        }
+
+        (int myTest, int B) GetPoint()
+        {
+            var myTest = 1;
+            return (myTest, 2);
         }
     }
 }

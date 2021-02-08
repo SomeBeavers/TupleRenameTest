@@ -7,20 +7,23 @@ namespace TupleRenameTest
         private void Test()
         {
             // tuple initialization expression
-            var t = (Sum: 4.5, Count: 3);
-            Console.WriteLine($"Sum of {t.Count} elements is {t.Sum}.");
+            var t = (lowercase_sum: 4.5, Count_renamed: 3);
+            Console.WriteLine($"Sum of {t.Count_renamed} elements is {t.lowercase_sum}.");
             Console.WriteLine($"Sum of {t.Item1} elements is {t.Item2}.");
 
+
+
+
             // definition of a tuple type
-            (double Sum, int Count) d = (4.5, 3);
-            Console.WriteLine($"Sum of {d.Count} elements is {d.Sum}.");
+            (double Sum, int Count_renamed) d = (4.5, 3);
+            Console.WriteLine($"Sum of {d.Count_renamed} elements is {d.Sum}.");
             Console.WriteLine($"Sum of {d.Item1} elements is {d.Item2}.");
 
             // inferred from the name of the corresponding variable in a tuple initialization expression
-            var sum = 4.5;
+            var d1 = 4.5;
             var count = 3;
-            var t2 = (sum, count);
-            Console.WriteLine($"Sum of {t2.count} elements is {t2.sum}.");
+            var t2 = (d1, count);
+            Console.WriteLine($"Sum of {t2.count} elements is {t2.d1}.");
             Console.WriteLine($"Sum of {t2.Item1} elements is {t2.Item2}.");
 
             // The candidate name is a duplicate of another tuple field name (implicit).
@@ -40,7 +43,7 @@ namespace TupleRenameTest
             // TODO: rename variable sum31 here -> tuple initialization is inserted
             var sum31 = 4.5;
             var ToString = 3;
-            var t2331 = (sum31: sum31, Item2: ToString);
+            var t2331 = (sum31: sum31, ToString);
             Console.WriteLine($"Sum of {t2331.sum31} elements is {t2331.ToString()}.");
             Console.WriteLine($"Sum of {t2331.Item1} elements is {t2331.Item2}.");
 
@@ -48,8 +51,8 @@ namespace TupleRenameTest
             (int A, int B) valueTuple = GetPoint();
 
 
-            var t21 = (name1: "value1", name2: "value2");
-            var tName1 = t21.name1;
+            var t21 = (name11: "value1", name2: "value2");
+            var tName1 = t21.name11;
         }
 
         private void Test2()
@@ -63,5 +66,9 @@ namespace TupleRenameTest
         {
             return (A: 1, 2);
         }
+    }
+
+    internal interface IGenerator
+    {
     }
 }

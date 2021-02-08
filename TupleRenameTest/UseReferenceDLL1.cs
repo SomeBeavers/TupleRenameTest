@@ -6,7 +6,7 @@ namespace TupleRenameTest
     {
         private void Test()
         {
-            var s1 = (s1_renamed: new ReferenceDLL1().Method1().Test, Test:1);
+            (string Test, int) s1 = (new ReferenceDLL1().Method1().Test, 1);
         }
     }
 }
