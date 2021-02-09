@@ -5,6 +5,10 @@ namespace TupleRenameTest
 {
     public class MethodParameter
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test1()
         {
             var limitsLookup = new Dictionary<int, (int Min, int Max)>()

@@ -4,6 +4,10 @@ namespace TupleRenameTest
 {
     public class SystemTupleCreate
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test1()
         {
             var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);

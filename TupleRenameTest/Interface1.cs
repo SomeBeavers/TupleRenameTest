@@ -11,6 +11,10 @@ namespace TupleRenameTest
             MyProp = param;
             Console.WriteLine(MyProp.b1);
         }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     class Nterface2 : Interface1
@@ -19,7 +23,11 @@ namespace TupleRenameTest
 
         public void Test1((string s, int t, bool b) param)
         {
-            
+
+        }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -29,6 +37,10 @@ namespace TupleRenameTest
         public void Test1((string s, int t, bool b) param)
         {
             throw new NotImplementedException();
+        }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -42,6 +54,10 @@ namespace TupleRenameTest
             {
                 
             }
+        }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

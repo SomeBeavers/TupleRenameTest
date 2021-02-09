@@ -4,6 +4,10 @@ namespace TupleRenameTest
 {
     public class TupleAssignment
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test()
         {
             (int I, double D) t1 = (17, 3.14);

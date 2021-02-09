@@ -9,12 +9,19 @@ namespace TupleRenameTest
             Console.WriteLine(var1.test1);
             Var1 = var1;
         }
-
+        private void Test2()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public (string a, int test) Var1 { get; private set; }
     }
 
     public class Conflicts
     {
+        private void Test2()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test()
         {
             

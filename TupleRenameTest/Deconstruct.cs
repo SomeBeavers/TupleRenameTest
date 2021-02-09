@@ -4,9 +4,12 @@ namespace TupleRenameTest
 {
     public class Deconstruct
     {
-        
 
 
+        private void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test1(string s)
         {
             (string destination, double distance) t = (destination: "post office", distance: 3.6);

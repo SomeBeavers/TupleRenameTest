@@ -5,6 +5,10 @@ namespace TupleRenameTest
 {
     public class MethodReturnType
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public (int myName, int, int) MethodReturnType1()
         {
             var myName = 1;

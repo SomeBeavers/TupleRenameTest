@@ -1,9 +1,14 @@
 ﻿using System;
+using TupleRenameTest;
 
 namespace TupleRenameTest1
 {
     public class Struct1
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         protected (Class1 class1, Class2 class2, Class3 class3) field1;
 
         public Struct1((Class1 class1, Class2 class2, Class3 class3) field1)
@@ -29,13 +34,25 @@ namespace TupleRenameTest1
 
     public class Class3
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     public class Class2
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     public class Class1
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 }

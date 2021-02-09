@@ -2,6 +2,10 @@
 {
     public class MethodReturnType2
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public (CreatedClass ParameterName_Test, string b1) MethodReturnType2Test1()
         {
             var a = new CreatedClass();

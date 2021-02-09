@@ -8,6 +8,10 @@ namespace TupleRenameTest
         {
             return (null, 0, null);
         }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     class Inheritance3BaseImpl : Inheritance3Base
@@ -17,6 +21,10 @@ namespace TupleRenameTest
             Console.WriteLine(parameter.s);
             return base.Test1(parameter);
         }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     public class Inheritance3 : Inheritance3Base
@@ -25,6 +33,10 @@ namespace TupleRenameTest
         {
             Console.WriteLine(parameter.s);
             throw new System.NotImplementedException();
+        }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

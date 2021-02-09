@@ -2,6 +2,10 @@
 {
     public class RenameTypeRelatedTuple
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         class MyClass // rename here
         {
             public string S;

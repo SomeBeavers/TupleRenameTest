@@ -27,6 +27,14 @@ namespace TupleRenameTest
     // ReSharper disable once UnusedType.Global
     class UseField2
     {
+
+        public (int t, string s) FieldWithManyUsages1 = (1,"");
+
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
+
         //private string _field1SRenamed;
 
         //public async Task Test1()

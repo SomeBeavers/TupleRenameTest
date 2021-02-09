@@ -9,11 +9,19 @@ namespace TupleRenameTest
         {
             return (null, null, null);
         }
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     record Record3 : Record1
     {
 
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public Record3((string Name, int T) TupleInRecord) : base(TupleInRecord)
         {
             var s = Name.s;
@@ -33,10 +41,18 @@ namespace TupleRenameTest
 
     public record Record2((string Name, int T) TupleInRecord) : Record1(TupleInRecord)
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
     }
 
     public record Record4: Record1
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public new (string Name, int T) TupleInRecord { get; set; }
 
         public Record4((string Name, int T) TupleInRecord) : base(TupleInRecord)
@@ -47,11 +63,19 @@ namespace TupleRenameTest
 
     record Record5((string Name, int T) TupleInRecord, (string Name, int Item2) AnotherProp) : Record1(TupleInRecord)
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public new (string Name, int T) TupleInRecord { get; set; }
     }
 
     class UseRec2
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test2()
         {
             var record5 = new Record5(("", 2), ("", 2));
@@ -67,6 +91,10 @@ namespace TupleRenameTest
 
     class Class1
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public Class1((string Name, int T) tupleInClass)
         {
             TupleInClass = tupleInClass;
@@ -77,6 +105,10 @@ namespace TupleRenameTest
 
     class UseClass1
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test3()
         {
 
@@ -85,6 +117,10 @@ namespace TupleRenameTest
 
     record UseRec
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public void Test1()
         {
             //new Record1((Name: "", T: 1)).TupleInRecord.Name.ToImmutableList();

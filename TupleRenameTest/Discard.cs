@@ -4,12 +4,18 @@
     {
         internal class MyClass2
         {
-
+            private void Test21_UseField()
+            {
+                var s = new UseField2().FieldWithManyUsages1.s;
+            }
         }
 
         internal class MyClass23
         {
-
+            private void Test21_UseField()
+            {
+                var s = new UseField2().FieldWithManyUsages1.s;
+            }
         }
 
         private (UseExtensionMethod.MyClass MyClass, MyClass23 MyClass23) Test2()
@@ -20,7 +26,10 @@
 
             return (null, null);
         }
-
+        private void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private void Test23()
         {
             var (_, _) = Test2();

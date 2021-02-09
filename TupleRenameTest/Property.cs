@@ -6,6 +6,10 @@ namespace TupleRenameTest
 {
     public class Property
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         public static (int t1, int myValue23) Get()
         {
             var tuple = (s1: 1, t2: 1);

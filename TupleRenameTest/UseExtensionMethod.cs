@@ -4,6 +4,10 @@ namespace TupleRenameTest
 {
     public class UseExtensionMethod
     {
+        public void Test21_UseField()
+        {
+            var s = new UseField2().FieldWithManyUsages1.s;
+        }
         private (MyClass MyClass, MyClass23 MyClass23) Test2()
         {
             // t
