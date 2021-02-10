@@ -1,0 +1,35 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+<p>Current count: @(new MyClass().currentCount1.t_renamed)</p>
+<p>Current count: @(new Class1().MyTest().t1_renamed)</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCount1">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+
+@code {
+    private (int t, string s) currentCount1 = (1, "");
+
+    private void IncrementCount1()
+    {
+        var valueTuple = new Class1().MyTest();
+        valueTuple.t1_renamed++;
+        currentCount1.t++;
+    }
+
+    class MyClass
+    {
+        public (int t_renamed, string s_renamed) currentCount1 = (1, "");
+    }
+}

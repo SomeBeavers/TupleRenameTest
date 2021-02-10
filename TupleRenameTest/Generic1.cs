@@ -1,7 +1,9 @@
 ﻿#nullable enable
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 
 namespace TupleRenameTest
 {
@@ -35,7 +37,28 @@ namespace TupleRenameTest
 
         private void Test21_UseField()
         {
+        
             var s = new UseField2().FieldWithManyUsages1.s;
+        }
+
+
+    }
+
+    public struct MyStruct<K, V> : IEnumerable<(K Key/*caret*/, V Value)>
+    {
+        public IEnumerator<(K Key, V Value)> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        private void Test()
+        {
+            var key = this.First().Key;
         }
     }
 }

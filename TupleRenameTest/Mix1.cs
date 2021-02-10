@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using TupleRenameTest;
 using MyAlias = System.Collections.Generic.List<System.Tuple<int, string, int>>;
 using MyAlias1 = System.Collections.Generic.List<(int t, string s)>;
@@ -28,6 +29,44 @@ namespace ConsoleApp5
 
             var item1 = x.First().t;
             Console.WriteLine("Hello World!");
+        }
+
+        private VeryCurrent VeryCurrent1
+        {
+            get;
+            set;
+        }
+        public (string s, int t) Current => VeryCurrent1.KeyValue;
+
+        public class VeryCurrent
+        {
+            public (string s, int t) KeyValue
+            {
+                get;
+                internal set;
+            }
+        }
+    }
+
+    internal class Enum<A>
+    {
+        public (bool Success, A Value) Get(int index)
+        {
+            return (false, default);
+        }
+    }
+
+    internal class SeqLazy<A>
+    {
+        readonly Enum<A> seq;
+
+        (bool Success, A Value) Test(int index)
+        {
+            while (seq != null && seq.Get(1).Success)
+            {
+            }
+
+            return (false, default);
         }
     }
 }
