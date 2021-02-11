@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebAppli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{F5F89F63-69F1-48B8-BD51-1B9CDB3D35A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiReferencedLib", "MultiReferencedLib\MultiReferencedLib.csproj", "{9831E625-EF0A-4DB1-A27B-76A7E31CAF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiReferencedLib", "MultiReferencedLib\MultiReferencedLib.csproj", "{9831E625-EF0A-4DB1-A27B-76A7E31CAF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUseReferencedLib", "ConsoleUseReferencedLib\ConsoleUseReferencedLib.csproj", "{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUseReferencedLib", "ConsoleUseReferencedLib\ConsoleUseReferencedLib.csproj", "{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfTest", "PerfTest\PerfTest.csproj", "{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -70,6 +72,10 @@ Global
 		{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
