@@ -4,7 +4,7 @@
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
         public (CreatedClass ParameterName_Test, string b1) MethodReturnType2Test1()
         {

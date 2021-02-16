@@ -2,7 +2,7 @@
 {
     public class LinkMe1
     {
-        public (string s, int t) LinkedProp { get; set; }
+        public (string s_renamed, int t) LinkedProp { get; set; }
 
     }
 }

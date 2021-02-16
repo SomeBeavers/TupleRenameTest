@@ -6,6 +6,6 @@ namespace SharedProject1
 {
     class Shared1
     {
-        public (string s, int t) SharedProp1 { get; set; }
+        public (string s1, int t1_renamed) SharedProp1 { get; set; }
     }
 }

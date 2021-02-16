@@ -13,7 +13,8 @@ namespace MultiTarget
             var innerClass2 = test2.myInnerClass;
 
             var sharedProp = new Shared1().SharedProp1;
-            Console.WriteLine(sharedProp.s + sharedProp.t);
+            sharedProp.t1_renamed = 1;
+            Console.WriteLine(sharedProp.s1 + sharedProp.t1_renamed);
 
             var test1 = new PreprocessorTest().Test1("");
 
@@ -37,5 +38,12 @@ namespace MultiTarget
 
     internal class MyInnerClass
     {
+        private (string s, int) a;
+
+        private void Test1()
+        {
+            var myVar = a;
+            Console.WriteLine(myVar.s/*caret*/);
+        }
     }
 }

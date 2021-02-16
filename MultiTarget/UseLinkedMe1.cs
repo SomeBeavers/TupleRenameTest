@@ -6,7 +6,7 @@ namespace MultiTarget
     {
         private void Test()
         {
-            var linkedPropS = new LinkMe1().LinkedProp.s;
+            var linkedPropS = new LinkMe1().LinkedProp.s_renamed;
         }
     }
 }

@@ -28,11 +28,11 @@ namespace TupleRenameTest
     class UseField2
     {
 
-        public (int t, string s) FieldWithManyUsages1 = (1,"");
+        public (int t, string s121) FieldWithManyUsages1 = (1,"");
 
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
 
         //private string _field1SRenamed;
@@ -50,9 +50,14 @@ namespace TupleRenameTest
         //}
 
         // ReSharper disable once UnusedMember.Local
-        private async Task<(string s1, int t)> GetTupleAsync(List<(string s/*caret*/, int t)> p)
+        private async Task<(string s1, int t)> GetTupleAsync(List<(string s, int t)> p)
         {
-            (string s, int t) valueTuple = (p.First().s, 1);
+            (string s, int t) valueTuple = (p.First().s/*caret*/, 1);
+
+            foreach (var tuple in p)
+            {
+                tuple.s.ToString();
+            }
             return (p.FirstOrDefault().s, p.Count);
         }
     }

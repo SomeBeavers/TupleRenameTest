@@ -7,9 +7,32 @@ using System.Linq;
 
 namespace TupleRenameTest
 {
+    public class UseGen
+    {
+        private void Test()
+        {
+            var generic1 = new Generic1<A12>(("", Age: new A12()));
+            generic1.myTuple.Age = null;
+            generic1.myTuple.Age = null;
+        }
+    }
+
+    internal class A12
+    {
+    }
+
+
     public class Generic1<T> where T: class, new()
     {
         private int _tupleU;
+        public (string, T Age) myTuple;
+
+        public Generic1((string, T Age) myTuple)
+        {
+            Console.WriteLine(myTuple.Age);
+            Console.WriteLine(this.myTuple.Age);
+            this.myTuple = myTuple;
+        }
 
         public void Test1<U>([NotNull](T? t, U u) par)
         {
@@ -38,7 +61,7 @@ namespace TupleRenameTest
         private void Test21_UseField()
         {
         
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
 
 

@@ -7,7 +7,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
         public (int myName, int, int) MethodReturnType1()
         {
@@ -18,7 +18,7 @@ namespace TupleRenameTest
         public (int myName, int, int) MethodReturnType2()
         {
             var sharedProp = new Shared1().SharedProp1;
-            Console.WriteLine(sharedProp.s + sharedProp.t);
+            Console.WriteLine(sharedProp.s1 + sharedProp.t1_renamed);
             var myName = 1;
             var localVar = (testMe: myName, 2, 3);
 
@@ -32,7 +32,7 @@ namespace TupleRenameTest
         }
 
 
-        public (string, string, long) TupleReturnLiteral(long id)
+        public (string, string, long l) TupleReturnLiteral(long id)
         {
             string name = string.Empty;
             string title = string.Empty;
@@ -51,8 +51,9 @@ namespace TupleRenameTest
 
         private void Test1()
         {
+            TupleReturnLiteral(1).l.ToString();
             var tupleReturnLiteral = TupleReturnLiteral(1);
-            Console.WriteLine(tupleReturnLiteral.Item3);
+            Console.WriteLine(tupleReturnLiteral.l);
         }
     }
 }

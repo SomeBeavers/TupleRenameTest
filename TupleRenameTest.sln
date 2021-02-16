@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiReferencedLib", "Multi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUseReferencedLib", "ConsoleUseReferencedLib\ConsoleUseReferencedLib.csproj", "{8ED46F7D-43F2-46D8-AC00-CD236086E1D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfTest", "PerfTest\PerfTest.csproj", "{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerfTest", "PerfTest\PerfTest.csproj", "{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMulti2", "UseMulti2\UseMulti2.csproj", "{69271FFD-F749-4F98-BEB3-0B8A81CD4413}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -76,6 +78,10 @@ Global
 		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29C78012-F7EB-4D64-ACA3-0BC17241D6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

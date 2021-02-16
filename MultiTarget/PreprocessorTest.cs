@@ -16,7 +16,7 @@
             var tuple = Test1("");
 
             var  newTuple = tuple;
-            var newTupleS = newTuple.s;
+            var newTupleS = tuple.s;
         }
 #if NET5_0
         private void Test21()

@@ -4,64 +4,64 @@
     {
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
 
     public interface InterfaceImplementation
     {
-        (string s, int t, A A) Test1((string s, int t) parameter)
+        (string s, int t, A A) Test1((string s1, int t1) parameter)
         {
-            return (parameter.s, parameter.t, null);
+            return (s: parameter.s1, t: parameter.t1, null);
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
 
     public class InterfaceImplementation1 : InterfaceImplementation
     {
-        public (string s, int t, A A) Test1((string s, int t/*caret*/) parameter1)
+        public (string s, int t, A A) Test1((string s1, int t1) parameter1)
         {
-            return (parameter1.s, parameter1.t, null);
+            return (s: parameter1.s1, t: parameter1.t1, null);
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
     public class InterfaceImplementation12 : InterfaceImplementation
     {
-        public (string s, int t, A A) Test1((string s, int t) parameter2)
+        public (string s, int t, A A) Test1((string s1, int t1) parameter2)
         {
-            return (parameter2.s, parameter2.t, null);
+            return (s: parameter2.s1, t: parameter2.t1, null);
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
     public class InterfaceImplementation13 : InterfaceImplementation
     {
-        public (string s, int t, A A) Test1((string s, int t) parameter3)
+        public (string s, int t, A A) Test1((string s1, int t1) parameter3)
         {
-            return (parameter3.s, parameter3.t, null);
+            return (s: parameter3.s1, t: parameter3.t1, null);
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
     public class InterfaceImplementation14 : InterfaceImplementation
     {
-        public (string s, int t, A A) Test1((string s, int t) parameter4)
+        public (string s, int t, A A) Test1((string s1, int t1) parameter4)
         {
-            return (parameter4.s, parameter4.t, null);
+            return (s: parameter4.s1, t: parameter4.t1, null);
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
 }

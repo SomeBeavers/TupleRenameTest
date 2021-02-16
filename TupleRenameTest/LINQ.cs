@@ -25,16 +25,46 @@ namespace TupleRenameTest
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
+        }
+
+        internal class MixClass
+        {
+        }
+
+        internal class Mix11
+        {
+            public MixClass Test1(string s,
+                Action<(string Message/*rename me*/, int FilesCount)> infoNotify = null)
+            {
+                return null;
+            }
+        }
+
+        class UseMix11
+        {
+            private void UseTest1()
+            {
+                var smugglerResult = new Mix11().Test1("",
+                    info =>
+                    {
+                        AddInfo(info.Message, 1);
+                    });
+            }
+
+            private void AddInfo(string infoMessage, int i)
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 
-    class C
+    public class C
     {
-        (int x, string y1) Test((int x1, string y1) valueTuple)
+        (int x, string y1) Test((int x1_renamed, string y1) valueTuple)
         {
-            M(Test); // use QF change signature of 'Test' here
-            valueTuple.x1.ToString();
+            M(Test); 
+            valueTuple.x1_renamed.ToString();
             return (0, null);
         }
         void M(Func<(int a, string b), (int c, string e)> a)
@@ -51,7 +81,7 @@ namespace TupleRenameTest
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s;
+            var s = new UseField2().FieldWithManyUsages1.s121;
         }
     }
 }
