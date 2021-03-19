@@ -19,6 +19,10 @@ namespace TupleRenameTest32
 
     class MyClass
     {
+        public (T, List<T> tList, string s) LinkedMethod<T>((List<T> tList, int, string s) parameter)
+        {
+            return (default, null, null);
+        }
         public (string s, int t) Test1()
         {
             return (null, 1);
@@ -41,6 +45,8 @@ namespace TupleRenameTest32
 
         private void UseField1((MyEnum myEnum, MyEnum enum2) parameter)
         {
+            (A, List<A> tList, string s) linkedMethod = new MyClass().LinkedMethod<A>((tList: null, 1, s: ""));
+
             bool? a = field switch
             {
                 { enum2/*caret*/: MyEnum.A } => true,
@@ -49,5 +55,9 @@ namespace TupleRenameTest32
                 _ => throw new ArgumentOutOfRangeException()
             };
         }
+    }
+
+    internal class A
+    {
     }
 }

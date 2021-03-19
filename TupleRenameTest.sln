@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerfTest", "PerfTest\PerfTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseMulti2", "UseMulti2\UseMulti2.csproj", "{69271FFD-F749-4F98-BEB3-0B8A81CD4413}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseMulti3", "UseMulti3\UseMulti3.csproj", "{E70274F8-4152-418A-99C7-E0D7C5A3BA86}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		SharedProject1\SharedProject1.projitems*{1f19eb40-e448-4c89-8c8e-ad006db5d779}*SharedItemsImports = 5
@@ -76,6 +78,10 @@ Global
 		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69271FFD-F749-4F98-BEB3-0B8A81CD4413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70274F8-4152-418A-99C7-E0D7C5A3BA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70274F8-4152-418A-99C7-E0D7C5A3BA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70274F8-4152-418A-99C7-E0D7C5A3BA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70274F8-4152-418A-99C7-E0D7C5A3BA86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

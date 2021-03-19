@@ -14,7 +14,7 @@ namespace ConsoleUseReferencedLib
 
 
             var hasUrl = new MultiReferencedLib1().Test1("").b12;
-            Console.WriteLine(new MultiReferencedLib1().Property.s121_renamed);
+            Console.WriteLine(new MultiReferencedLib1().Property.coolName);
             Console.WriteLine(new MultiReferencedLib1().Property.t1);
             Console.WriteLine("Hello World!");
         }

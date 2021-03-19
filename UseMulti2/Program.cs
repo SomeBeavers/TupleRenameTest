@@ -8,7 +8,7 @@ namespace UseMulti2
         static void Main(string[] args)
         {
             var valueTuple = new MultiReferencedLib1().Property;
-            Console.WriteLine(valueTuple.s121_renamed);
+            Console.WriteLine(valueTuple.coolName);
             Console.WriteLine(valueTuple.Item2);
             Console.WriteLine("Hello World!");
         }
