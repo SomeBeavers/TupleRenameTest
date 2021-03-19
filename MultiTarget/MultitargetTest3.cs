@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using SharedProject1;
 
 namespace MultiTarget
@@ -16,6 +17,12 @@ namespace MultiTarget
             var sharedProp = new Shared1().SharedProp1;
             sharedProp.t1_renamed = 1;
             Console.WriteLine(sharedProp.s1 + sharedProp.t1_renamed);
+
+            (A, List<A> tList, string s) linkedMethodFromGenericClass = new SharedGeneric<A>().LinkedMethodFromGenericClass((tList: null, (1, s: "")));
+
+            var first = linkedMethodFromGenericClass.tList.First();
+            (string, List<string> tList, string s) method = new SharedGeneric<A>().NormalMethodFromGenericClass((tList: null, (1, s: "")));
+
 
             (A, List<A> tList, string s) linkedMethod = new Shared1().LinkedMethod<A>((tList: null, 1, s: ""));
             var test1 = new PreprocessorTest().Test1("");

@@ -23,6 +23,9 @@ namespace TupleRenameTest
 
             (A, List<A> tList, string s) linkedMethod = new Shared1().LinkedMethod<A>((tList: null, 1, s: ""));
 
+            (A, List<A> tList, string s) linkedMethodFromGenericClass = new SharedGeneric<A>().LinkedMethodFromGenericClass((tList: null, (1, s: "")));
+            (string, List<string> tList, string s) method = new SharedGeneric<A>().NormalMethodFromGenericClass((tList: null, (1, s: "")));
+
             var myName = 1;
             var localVar = (testMe: myName, 2, 3);
 
