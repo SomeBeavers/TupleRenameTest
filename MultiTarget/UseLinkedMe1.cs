@@ -10,7 +10,7 @@ namespace MultiTarget
         {
             var linkedPropS = new LinkMe1().LinkedProp.s_renamed1;
             (A, List<A> tList, string s) linkedMethod = new LinkMe1().LinkedMethod<A>((tList: null, 1, s: ""));
-
+            (A, List<A> tList, string s) valueTuple = new GenericLinkMe<A>().LinkedMethod((tList: null, 1, s: ""));
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using SharedProject1;
 
 namespace TupleRenameTest
@@ -19,6 +20,9 @@ namespace TupleRenameTest
         {
             var sharedProp = new Shared1().SharedProp1;
             Console.WriteLine(sharedProp.s1 + sharedProp.t1_renamed);
+
+            (A, List<A> tList, string s) linkedMethod = new Shared1().LinkedMethod<A>((tList: null, 1, s: ""));
+
             var myName = 1;
             var localVar = (testMe: myName, 2, 3);
 

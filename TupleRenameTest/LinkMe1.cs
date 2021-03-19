@@ -10,6 +10,13 @@ namespace TupleRenameTest
         {
             return (default, null, null);
         }
+    }
 
+    public class GenericLinkMe<T> where T: class, new()
+    {
+        public (T, List<T> tList, string s) LinkedMethod((List<T> tList, int, string s) parameter)
+        {
+            return (default, null, null);
+        }
     }
 }
