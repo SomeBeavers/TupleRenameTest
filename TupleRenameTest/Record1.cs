@@ -11,7 +11,7 @@ namespace TupleRenameTest
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -20,7 +20,7 @@ namespace TupleRenameTest
 
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public Record3((string Name, int T) TupleInRecord) : base(TupleInRecord)
         {
@@ -43,7 +43,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -51,7 +51,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public new (string Name, int T) TupleInRecord { get; set; }
 
@@ -65,7 +65,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public new (string Name, int T) TupleInRecord { get; set; }
     }
@@ -74,7 +74,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         private void Test2()
         {
@@ -93,7 +93,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public Class1((string Name, int T) tupleInClass)
         {
@@ -107,7 +107,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         private void Test3()
         {
@@ -119,7 +119,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public void Test1()
         {

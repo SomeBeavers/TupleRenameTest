@@ -25,7 +25,7 @@ namespace TupleRenameTest
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
 
         internal class MixClass
@@ -81,7 +81,7 @@ namespace TupleRenameTest
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

@@ -7,7 +7,7 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         public partial  (string s, int t1) Test1(string s, string s2);
 

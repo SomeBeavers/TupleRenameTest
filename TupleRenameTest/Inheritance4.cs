@@ -5,7 +5,7 @@
         (string s, int t, A A) Test1((string s/*caret*/, int t) parameter);
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -14,7 +14,7 @@
         (string s, int t, A A) Test1((string s, int t) parameter);
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -26,7 +26,7 @@
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         private void Test(string parameter)
         {

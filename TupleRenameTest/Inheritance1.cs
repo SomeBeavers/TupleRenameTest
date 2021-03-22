@@ -4,7 +4,7 @@
     {
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -16,7 +16,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -28,7 +28,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
     public class InterfaceImplementation12 : InterfaceImplementation
@@ -39,7 +39,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
     public class InterfaceImplementation13 : InterfaceImplementation
@@ -50,7 +50,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
     public class InterfaceImplementation14 : InterfaceImplementation
@@ -61,7 +61,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ConsoleApp5
 
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
 
         private static void Main1(string[] args)

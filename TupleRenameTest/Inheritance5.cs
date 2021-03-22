@@ -7,7 +7,7 @@ namespace TupleRenameTest1
         (string s, int t, A A) Test1((string s, int t) parameter);
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -16,7 +16,7 @@ namespace TupleRenameTest1
         new (string s, int t, A A) Test1((string s, int t) parameter);
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -25,7 +25,7 @@ namespace TupleRenameTest1
         (string s, int t, A A) Test1((string s, int t) parameter);
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -37,7 +37,7 @@ namespace TupleRenameTest1
         }
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

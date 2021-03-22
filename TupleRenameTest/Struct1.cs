@@ -7,7 +7,7 @@ namespace TupleRenameTest1
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         protected (Class1 class1, Class2 class2, Class3 class3) field1;
 
@@ -36,7 +36,7 @@ namespace TupleRenameTest1
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -44,7 +44,7 @@ namespace TupleRenameTest1
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 
@@ -52,7 +52,7 @@ namespace TupleRenameTest1
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
     }
 }

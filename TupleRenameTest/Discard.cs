@@ -6,7 +6,7 @@
         {
             private void Test21_UseField()
             {
-                var s = new UseField2().FieldWithManyUsages1.s121;
+                var s = new UseField2().FieldWithManyUsages1.s;
             }
         }
 
@@ -14,7 +14,7 @@
         {
             private void Test21_UseField()
             {
-                var s = new UseField2().FieldWithManyUsages1.s121;
+                var s = new UseField2().FieldWithManyUsages1.s;
             }
         }
 
@@ -28,7 +28,7 @@
         }
         private void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
         private void Test23()
         {

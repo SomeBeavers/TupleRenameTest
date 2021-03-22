@@ -8,15 +8,15 @@ namespace TupleRenameTest
     {
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
-        public (int myName, int, int) MethodReturnType1()
+        public (int myName1, int, int) MethodReturnType1()
         {
             var myName = 1;
-            return (myName: myName, 2, 3);
+            return (myName1: myName, 2, 3);
         }
 
-        public (int myName, int, int) MethodReturnType2()
+        public (int myName1, int, int) MethodReturnType2()
         {
             var sharedProp = new Shared1().SharedProp1;
             Console.WriteLine(sharedProp.s1 + sharedProp.t1_renamed);

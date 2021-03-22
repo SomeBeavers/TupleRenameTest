@@ -28,11 +28,11 @@ namespace TupleRenameTest
     class UseField2
     {
 
-        public (int t, string s121) FieldWithManyUsages1 = (1,"");
+        public (int t, string s) FieldWithManyUsages1 = (1,"");
 
         public void Test21_UseField()
         {
-            var s = new UseField2().FieldWithManyUsages1.s121;
+            var s = new UseField2().FieldWithManyUsages1.s;
         }
 
         //private string _field1SRenamed;
