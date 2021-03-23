@@ -45,7 +45,7 @@ namespace MultiTarget
     {
     }
 
-    internal class MyInnerClass
+    public class MyInnerClass
     {
         private (string s, int) a;
 
