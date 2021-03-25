@@ -11,30 +11,30 @@ namespace TupleRenameTest
         private void Test()
         {
             // tuple initialization expression
-            var t = (lowercase: 4.5, Count: 3);
-            Console.WriteLine($"Sum of {t.Count} elements is {t.lowercase}.");
+            var t = (lowercase_renamed: 4.5, Count1: 3);
+            Console.WriteLine($"Sum of {t.Count1} elements is {t.lowercase_renamed}.");
             Console.WriteLine($"Sum of {t.Item1} elements is {t.Item2}.");
 
 
 
 
             // definition of a tuple type
-            (double Sum1_1, int Count) d = (4.5, 3);
-            Console.WriteLine($"Sum of {d.Count} elements is {d.Sum1_1}.");
+            (double Sum1, int Count) d = (4.5, 3);
+            Console.WriteLine($"Sum of {d.Count} elements is {d.Sum1}.");
             Console.WriteLine($"Sum of {d.Item1} elements is {d.Item2}.");
 
             // inferred from the name of the corresponding variable in a tuple initialization expression
             var d1 = 4.5;
             var count = 3;
-            var t2 = (d1, count);
-            Console.WriteLine($"Sum of {t2.count/*caret*/} elements is {t2.d1}.");
+            var t2 = (d111: d1, Count_renamed: count);
+            Console.WriteLine($"Sum of {t2.Count_renamed/*caret*/} elements is {t2.d111}.");
             Console.WriteLine($"Sum of {t2.Item1} elements is {t2.Item2}.");
 
             // The candidate name is a duplicate of another tuple field name (implicit).
             var sum2 = 4.5;
             var count2 = 3;
-            var t23 = (sum2, sum2);
-            Console.WriteLine($"Sum of {t23.Item1} elements is {t23.Item2}.");
+            var t23 = (sum2, c1: sum2);
+            Console.WriteLine($"Sum of {t23.Item1} elements is {t23.c1}.");
 
             // The candidate name is a duplicate of another tuple field name (explicit).
             var sum3 = 4.5;

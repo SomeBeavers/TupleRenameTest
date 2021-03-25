@@ -8,7 +8,9 @@ namespace ConsoleUseReferencedLib
     {
         static void Main(string[] args)
         {
-            var item4Tlist = new NugetLib.NugetLib().NugetLibMethod<A>().Item4.Tlist;
+            var valueTuple = new NugetLib.NugetLib().NugetLibMethod<A>();
+            var valueTupleS = new NugetLib.NugetLib().NugetLibMethod<A>().s;
+            var item4Tlist = valueTuple.Item4.Tlist;
             (A, A t, string s, (List<A> Tlist1, int count)) nugetLibMethod = new NugetLib.NugetLib().NugetLibMethod<A>();
             nugetLibMethod.Item4.Tlist1.Add(new A());
 
